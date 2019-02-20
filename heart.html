@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*<!--2D包含2D转换，2D位移，2D移动-->*/
+        div{
+            width: 200px;
+            height: 200px;
+            /*transform: translate(100px,100px);!*<!--分别表示在x轴和在Y轴上的移动-->*!*/
+        }
+        #red,#yellow{
+            background: red;
+            border-radius: 50%;
+
+
+        }
+        #red{
+            position: absolute;
+            top:320px;
+            left: 448px;
+        }
+        #yellow{
+            position: absolute;
+            top:321px;
+            left:597px;
+        }
+        #green{
+            background: red;
+            position: absolute;
+            top: 395px;
+            left: 523px;
+            /*transform: translate(-100px,-100px);*/
+            transform: rotate(45deg);
+        }
+        #div{
+            width: 100px;
+            height: 100px;
+            background: black;
+        }
+        #div:hover{
+            transform: scale(0.5);/*缩放效果*/
+        }
+    </style>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div id="div"></div>
+</body>
+</html>
